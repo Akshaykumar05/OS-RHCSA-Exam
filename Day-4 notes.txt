@@ -1,0 +1,53 @@
+[root@localhost ~]# useradd   monika   
+[root@localhost ~]# 
+[root@localhost ~]# passwd  monika
+Changing password for user monika.
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# useradd  soniya 
+[root@localhost ~]# 
+[root@localhost ~]# passwd  soniya 
+Changing password for user soniya.
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# su  -  monika 
+[monika@localhost ~]$ 
+[monika@localhost ~]$ 
+[monika@localhost ~]$ ls
+[monika@localhost ~]$ 
+[monika@localhost ~]$ exit
+logout
+[root@localhost ~]# 
+[root@localhost ~]# su  -  monika 
+[monika@localhost ~]$ 
+[monika@localhost ~]$ su - soniya 
+Password: 
+[soniya@localhost ~]$ exit
+logout
+[monika@localhost ~]$ exit
+logout
+[root@localhost ~]# 
+=============================
+[root@localhost ~]# reboot OR init 6  OR  systemctl reboot
+=============================
+[root@localhost ~]# poweroff OR init 0 OR systemctl poweroff
+=============================
+Live Server ==> Troubleshooting mode  ==> Reboot==>   # reboot -f
+=============================
+# reboot
+# reboot -f
+=============================
+
+
+
+
+
+
