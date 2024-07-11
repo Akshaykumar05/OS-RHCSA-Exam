@@ -1,0 +1,317 @@
+===========================================
+  Day-4 Session ===> Linux - Basic Class
+===========================================
+
+Linux Admin ==> Login ==> and will Perfrom these task every day as per use case
+
+===> Install/Uninstall/Configure/Changes/backups/Monitor/Troubleshoot/Design/Update/And other activities
+
+===========================================
+
+Types of Login User ?
+
+1- Super user      ==> root               ==> #    ==> Full Power
+2- Normal users    ==> amit deepak sumit  ==> $    ==> Limited Power
+     OR
+   Custom Users
+
+SUDO  user  ==> with this topic we can increase or decrease Rights to any users.
+
+#  ==>  Privileged Mode
+$  ==>  Non-Privileged Mode
+
+========================================
+Windows      ==> Application/tools/Software   ==> setup ==>  .exe 
+redhat Linux ==> Command/Application/Tools     ==> Packages OR rpm  ==> Redhat package manager
+========================================
+Application vendor  ==> developer ==> create
+
+Google Chrome  download for windows      ==> .exe 
+Google Chrome Download for redhat linux  ==> .rpm 
+========================================
+Windows             Linux 
+
+File      <===>     File
+Folder    <===>     Directory
+
+=======================================
+
+Types of Login mode ?  
+
+1- GUI Mode
+2- CLI Mode 
+
+90% linux admin  ==> 1- works in CLI mode 
+                     2- always works with remote login concept 
+======================================== RPM Management OR RPM Installation
+RPM Installation
+RPM update ?       HOLD
+RPM Erase ?
+========================================
+Trainer  ==> Linux Training  ==> Basic Topic ==> repective ==> already available
+========================================
+manually using Command line  ==> Application Installation
+========================================
+1- FTP
+2- apache
+3- DNS 
+4- DHCP 
+========================================
+tree  ==> command ==> repective rpm ==> already installed
+Linux  ==> tree ==> command  => we are not able to execute this ==> we need to install respective rpm
+========================================
+1- What is Command ?
+2- What is Commond Prompt OR Terminal ?
+3- How we can process the command ?
+========================================
+
+
+What is IPO ? [ Input Processing Output ] ==> Shell and Kernel
+
+Terminal OR Command prompt  ==> command typing ==> enter ==> input  ==> code read => Processing OR Excute ==> output 
+
+======================================== Linux is kernel ? OR linux is an open source operating system ?
+What is Shell ?            ===> HOLD
+What is kernel ?
+What is operating system ?
+========================================
+Machine  <== operting system  <== login  <== command prompt  <== command type  ==> IPO
+========================================
+
+# clear
+# ls 
+# useradd  deepak 
+# userdel  deepak 
+=======================================
+
+Now we are going to start Practical based Session
+
+=======================================
+
+How we can login with root account and with normal user in GUI Mode ? ==> local to local
+
+not listed ==> Click 
+
+root
+redhat
+
+
+krishna
+redhat 
+
+=========================================
+
+
+Task-1         ==> DONE
+
+How we can open terminal to give input of any commands ?
+
+Activities  ===>  Terminal  ==>
+
+
+    OR
+
+
+Alt + F2   ==> to get run application window
+
+gnome-terminal   ==> to open the command line terminal 
+
+
+==========================================
+Task-2      
+
+Terminal or console  Short keys
+
+Ctrl + Shift  ++++   ==> to increase the font size
+Ctrl + ---           ==> to decease the font size
+
+Alt + F10            ==> to maxmize the window size
+Alt + F5             ==> to restore the window size
+
+
+
+
+
+Ctrl + Shift + t  ==> to open sub terminal in existing terminal
+Ctrl + PageUp/pageDown  ==> to switch between the terminal tabs
+
+
+# exit or  Ctrl + d   ==> for logout from the current user
+
+Alt + F4                ==> to close all terminal windows
+
+Ctrl + Shift + n  ==> to open new terminal windows to run the command
+
+# clear OR Ctrl + l      ==> to clear screen 
+
+ctrl + c                ==> to quit from any running task
+
+
+=====================================================
+Types of login method ?
+
+1- Local to local  => DONE  ==> root or  normal user
+2- Remote Login ==> IP Address 
+=====================================================
+VM-1  <== rhel-9  <== windows ==> software ==> connect ==> VM  ==> command prompt ==> command => practise ==> logout
+=====================================================
+
+on windows  ==> VM or Cloud based Platform  ==> Using Putty Software 
+
+Step-1 on windows  ==> download putty software on windows machine and install it.
+Step-2 on Rehdat linux VM machine ==> Configure internet or IP address
+=====================================================
+Mobile ==> SIM card ==> uniq number ==> Mobile Number 
+internet proctocol address
+
+Choice-1 Local to Local
+
+Choice-2 Remote Login
+
+=====================================================
+
+Task-3   How we can add any normal user and apply password for login
+
+Syntax:-
+
+# useradd  <username>
+   or 
+  adduser
+
+# passwd   <username>
+
+====================================================
+
+Task-4  How we can switch into any user account using su command ?
+
+# su -  <username>
+
+$
+
+$ exit  OR Ctrl + d   { for logout }
+
+#
+
+ 
+===================================================
+Task-5   How we can delete any user from the machine ?
+
+
+
+# userdel   username    [ to delete any user but without home directory data and mailbox]
+
+
+Task-6
+
+# userdel  -r   username    [  to delete any  user with thier home directory data and plus mail box ]
+
+=====================================================
+
+Task-6  Rules    
+  
+ Command without any options      ==> # useradd  soniya    # clear     # ls 
+ Command with any single options  ==> # userdel -r  soniya    
+ Command with multiple options    ==> # userdel -r  -f  soniya 
+
+# userdel  <options>   <username>
+           OR
+#commandname  <options>   <input value>
+# reboot
+# reboot  -f   
+
+====================================================
+
+types of options apply method ?
+
+1- started with single   -
+2- started with double   --
+
+# userdel  --help
+      OR
+# userdel   -h
+
+syntax:-
+
+# directcommand                     # clear    # pwd    # useradd soniya 
+# command   space  argument
+# command  space   option1    argument
+# command  space   option1   option2   option3 ... so on     argument
+# command  space   -multipleoptions    argument
+# command  space   --option    --option   --option    argument
+                      or          or         or
+                     word         word       word
+# command  space   --option    --option   -option    argument
+                      or          or         or
+                     word         word      singlecharacter
+
+======================================================
+# command   --help
+======================================================
+
+Task-7   ==> DONE
+
+Command line short keys 
+ 
+Example:-
+
+# systemctl  restart  crond       [ type this command on your terminal window ]
+
+Ctrl + a             ==> to move cursor in beginning of the command OR  [HOME]
+Ctrl + e             ==> to move cursor in end of the command       OR  [END]
+Ctrl + <-- [arrow]   ==> to move cursor word by word in back side
+Ctrl + --> [arrow]   ==> to move cursor word by word in forward side
+Ctrl + u             ==> to delete command before the cursor   
+Ctrl + k             ==> to delete command After the cursor 
+
+
+
+up arrow     ==> always store the last command which is executed by the user on this terminal
+!!   ==> to execute just last command
+
+
+Ctrl + r     ==> to search and execute any command from the history   
+
+!15          ==> to run 15 number command from the history
+!-4          ==> to run forth number command from the back side
+=======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
