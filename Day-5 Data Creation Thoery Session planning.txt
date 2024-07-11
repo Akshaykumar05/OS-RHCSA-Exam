@@ -1,0 +1,252 @@
+==================================
+  Day-5 Session
+==================================
+
+Machine [H/W] <== operating system <== Application/Services/Software
+
+==================================
+Redhat linux Lab ?
+
+1- physical machine
+2- Virtual machine 
+3- Cloud based portal 
+
+==================================
+machine <=== RHEL-9  <== Login  <== Practise or training
+==================================
+1- Local to local login
+2- remote login 
+==================================
+Types of users ?
+1- Super user   ==> root                 ==> Command prompt OR terminal ==> # ==> 100% Rights
+2- normal user  ==> deepak sumit rahul   ==> Command prompt or terminal ==> $ ==> Limited Rights
+
+but we can increase/deacrse the right for any users as per demands
+
+===================================
+
+root   ==> XYZ command  ==> able to execute
+deepak ==> XYZ command  ==> Permissions denied
+
+=================================== 
+User ?
+Group ?
+
+Permissions 1- User based  ==> we can permission to particular users as per demands
+            2- group based ==> we can also give permission on any group so that it will apply on every members of this group.
+
+===================================
+User  ==> machine  ==> login  ==> 1- Command ==> run ==> application ==> Controll/Monitor/configure
+                                  2- data management OR Data Creation
+===================================
+Command ==> Executable  ==> rights  ==> YES ==> 
+Data Creation ==> Permissions
+===================================
+Types of Permission
+
+1- Command based Execution based Permissions
+
+2- File and Directory based permissions
+
+===================================
+
+
+How we can create data in linux operating system with any user account ?
+
+===================================
+Permissions ==> file or folder 
+            ==> command 
+===================================
+
+login ==> 1- super user   <=== Data Creation [Full rights ]  + Command Execution  [Full rights]
+          2- Normal user  <=== Data Creation [ As per current permissions ]
+                          <=== Command Execution [ basic Command ==> YES ] + admin power [by default no + we can customised]
+
+==================================
+Windows          Linux
+
+File       <===> File
+
+Folder     <===> Directory
+
+==================================
+
+machine H/W <== RAM + CPU + DISK  <== OS  <== application 
+
+Windows  ==> Login ==> Data ==> save   ==> DISK
+Linux    ==> login ==> Data ==> save   ==> DISK
+
+
+
+Hard DISK  ==> Partition  ==> Data
+
+Windows  ==> 500 GB DISK [Hard DISK ] <=== C:\   D:\   E:\   ==> These all are called partition  <== data store
+
+DISK ==> partition  ==> data [files or folder ]
+
+==================================
+How data store in windows and linux ?
+==================================
+
+C:\   ==> 500GB  ==> 500GB partition  ==> Data
+
+==================================
+
+Types of data ?
+
+1- OS defined data   OR Default data OR Application management Data or OS management Data
+2- User defined data OR Custom data
+
+==================================
+
+1- OS defined data   OR Default data
+   
+    A- During the OS installation time
+    B- After the OS installation time ==> if we are going to install any addon application as per demands
+
+2- Custom Data  ==> always after the OS installation 
+
+================================= 
+
+C:\ ===> OS defined data  + Custom data
+================================= Windows ==> My Computer  ==> partition  ==> Data 
+
+C:\   ==> OS defined data
+D:\ E:\ F:\  ==> we can use these partition to store personal data.
+
+=================================
+
+There is no concept of C:\  D:\  E:  F:\ in Linux 
+we have only single parent directory to storage the entrire linux data which is called  /
+
+
+ /  ==> Forward slash  or parent directory or parent partition or ROOT Partition
+
+
+/ ===> types of data   ==> 1- Default Data
+                           2- Custom data
+=================================
+
+Fresh machine  ==> Install 
+
+# ls  /   ==> around 20 directory  ==> default data
+
+
+# mkdir  /java
+
+# ls  /
+
+20  + 1   ==> 21
+
+Parent directory 
+
+Top Level Directory
+
+Sub directory
+
+# ls  /
+
+# mkdir /movie
+
+# ls /  ==> 20 + 1 + 1  => 22
+
+# mkdir  /java/java1
+
+# ls  /
+
+# ls  /java
+
+# mkdir  /storage
+
+# ls  /    ==> 20 + 1 + 1 + 1 ==> 23
+
+# ls  /storage  ==>  blank 
+# ls  /java     ==> java1
+# ls  /java/java1 ==> blank 
+# mkdir  /storage/redhat
+# mkdir  /java/java1/linux  ==> 23 Directory
+
+# ls /  ==> 23 Directory
+
+=================================  
+
+
+# ls   /  ==> default directory  ==> Complete directory  ==> OS managing directory
+Except of these default directory  ==> alol data will count in Custom data
+
+Default  ==  Pre defined role or Function
+ 
+================================
+/ ===> OS defined  + Custom Data ==> YES
+
+
+/ ==> around 18 Directory  ==> OS managing Directory 
+  ==> 2 default directory  ==> user's home directory
+================================
+
+root    ==>  1- private place [ YES ]  +  Public Place [YES]
+deepak  ==>  1- private place [ YES ]  +  Pubplc Place [as per defined permission or current permission on it ] 
+
+================================
+Home directory of super user   ==>  /root 
+
+Default Home Directory for all Normal user ==> /home   ==> /home/soniya
+
+================================
+root   ==> ~ OR  /root
+soniya ==> ~ OR  /home/soniya
+================================
+Except of home directory  ==> data  ==>  public place
+
+================================
+
+
+#  mkdir /java       ==>  public 
+#  mkdir  /root/java ==>  home account or private
+
+================================
+
+$ mkdir  /home/soniya/java ==> YES
+$ mkdir  /java  ==> NO   ==> outside of the home directory ==> read only mode
+
+================================
+/
+
+/root
+/home/soniya
+================================
+root      ==> user user login name
+/         ==> root directory or parent directory
+/root     ==> super user home directory or root's home directory
+sachin    ==> normal user name
+/home     ==> directory for all normal user
+/home/sachin ==> user's home directory
+/home/soniya ==> 
+================================
+present working directory 
+current working directory
+================================
+
+mkdir  ==> to create any directory
+touch  ==> to create any blank file
+ls  ==> to check data listing
+cd  ==> to go into directory or change directory
+pwd  ==> to check my present working directory
+
+================================
+
+cd
+or      ==> go into my home directory
+cd ~
+or
+cd  /root
+
+================================
+
+
+
+
+
+
+
+==============================
