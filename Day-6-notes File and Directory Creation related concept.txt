@@ -1,0 +1,1070 @@
+===================================
+     Day-6 Session
+===================================
+
+
+
+
+File     <==> File
+Folder   <==> Directory
+
+===================================
+Data Creation Practical Session
+===================================
+
+[ root @ localhost ~ ]  #
+
+
+
+
+[deepak @ localhost ~ ]  $
+
+==================================
+[root@localhost ~]# ls 
+anaconda-ks.cfg  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls  /home
+student
+[root@localhost ~]# 
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# cd    /home
+[root@localhost home]# 
+[root@localhost home]# 
+[root@localhost home]# pwd
+/home
+[root@localhost home]# ls
+student
+[root@localhost home]# 
+[root@localhost home]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls
+anaconda-ks.cfg  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls /root 
+anaconda-ks.cfg  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls ~
+anaconda-ks.cfg  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls  /home 
+student
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp 
+systemd-private-13b364fa0c29400cb52c65205966fdf7-chronyd.service-uZURyz
+systemd-private-13b364fa0c29400cb52c65205966fdf7-colord.service-BPr9Rg
+systemd-private-13b364fa0c29400cb52c65205966fdf7-dbus-broker.service-YMHkT2
+systemd-private-13b364fa0c29400cb52c65205966fdf7-fwupd.service-iM7VSj
+systemd-private-13b364fa0c29400cb52c65205966fdf7-ModemManager.service-JNh9d0
+systemd-private-13b364fa0c29400cb52c65205966fdf7-power-profiles-daemon.service-k1CdKJ
+systemd-private-13b364fa0c29400cb52c65205966fdf7-rtkit-daemon.service-Z1qYYR
+systemd-private-13b364fa0c29400cb52c65205966fdf7-switcheroo-control.service-OvivTE
+systemd-private-13b364fa0c29400cb52c65205966fdf7-systemd-logind.service-QygfHU
+systemd-private-13b364fa0c29400cb52c65205966fdf7-upower.service-78V0Fq
+VMwareDnD
+[root@localhost ~]# cd /home 
+[root@localhost home]# ls
+student
+[root@localhost home]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /home
+[root@localhost home]# ls
+student
+[root@localhost home]# 
+[root@localhost home]# cd  /student
+bash: cd: /student: No such file or directory
+[root@localhost home]# 
+[root@localhost home]# cd /home/student
+[root@localhost student]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  /home
+[root@localhost home]# ls
+student
+[root@localhost home]# cd student
+[root@localhost student]# 
+[root@localhost student]# pwd
+/home/student
+[root@localhost student]# 
+[root@localhost student]# cd  ..
+[root@localhost home]# 
+[root@localhost home]# cd  ..
+[root@localhost /]# 
+[root@localhost /]# cd  ..
+[root@localhost /]# cd  ..
+[root@localhost /]# cd  ..
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# pwd
+/root
+[root@localhost ~]# touch abc  
+[root@localhost ~]# ls
+abc              Desktop    Downloads  Pictures  Templates
+anaconda-ks.cfg  Documents  Music      Public    Videos
+[root@localhost ~]# 
+[root@localhost ~]# touch  /abc
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+abc  bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+afs  boot  etc  lib   media  opt  root  sbin  sys  usr
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir data-1
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /data-2
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /tmp/data-3
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              data-1   Documents  Music     Public     Videos
+anaconda-ks.cfg  Desktop  Downloads  Pictures  Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+abc  bin   data-2  etc   lib    media  opt   root  sbin  sys  usr
+afs  boot  dev     home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp
+data-3
+systemd-private-13b364fa0c29400cb52c65205966fdf7-chronyd.service-uZURyz
+systemd-private-13b364fa0c29400cb52c65205966fdf7-colord.service-BPr9Rg
+systemd-private-13b364fa0c29400cb52c65205966fdf7-dbus-broker.service-YMHkT2
+systemd-private-13b364fa0c29400cb52c65205966fdf7-fwupd.service-iM7VSj
+systemd-private-13b364fa0c29400cb52c65205966fdf7-ModemManager.service-JNh9d0
+systemd-private-13b364fa0c29400cb52c65205966fdf7-power-profiles-daemon.service-k1CdKJ
+systemd-private-13b364fa0c29400cb52c65205966fdf7-rtkit-daemon.service-Z1qYYR
+systemd-private-13b364fa0c29400cb52c65205966fdf7-switcheroo-control.service-OvivTE
+systemd-private-13b364fa0c29400cb52c65205966fdf7-systemd-logind.service-QygfHU
+systemd-private-13b364fa0c29400cb52c65205966fdf7-upower.service-78V0Fq
+VMwareDnD
+[root@localhost ~]# 
+
+[root@localhost ~]# mkdir  /data 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /data/data-1
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /data/data-1/data-2
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+abc  bin   data    dev  home  lib64  mnt  proc  run   srv  tmp  var
+afs  boot  data-2  etc  lib   media  opt  root  sbin  sys  usr
+[root@localhost ~]# 
+
+[root@localhost ~]# ls /data
+data-1
+[root@localhost ~]# ls /data/data-1
+data-2
+[root@localhost ~]# ls /data/data-1/data-2
+[root@localhost ~]# ls /data
+data-1
+[root@localhost ~]# 
+[root@localhost ~]# ls /data/data-1
+data-2
+[root@localhost ~]# 
+[root@localhost ~]# ls /data/data-1/data-2
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data
+[root@localhost data]# ls
+data-1
+[root@localhost data]# 
+[root@localhost data]# cd  data-1
+[root@localhost data-1]# 
+[root@localhost data-1]# ls
+data-2
+[root@localhost data-1]# cd  data-2
+[root@localhost data-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data/data-1/data-2
+[root@localhost data-2]# 
+[root@localhost data-2]# pwd
+/data/data-1/data-2
+[root@localhost data-2]# ls /
+abc  bin   data    dev  home  lib64  mnt  proc  run   srv  tmp  var
+afs  boot  data-2  etc  lib   media  opt  root  sbin  sys  usr
+[root@localhost data-2]# 
+[root@localhost data-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls /tmp 
+data-3
+systemd-private-13b364fa0c29400cb52c65205966fdf7-chronyd.service-uZURyz
+systemd-private-13b364fa0c29400cb52c65205966fdf7-colord.service-BPr9Rg
+systemd-private-13b364fa0c29400cb52c65205966fdf7-dbus-broker.service-YMHkT2
+systemd-private-13b364fa0c29400cb52c65205966fdf7-fwupd.service-iM7VSj
+systemd-private-13b364fa0c29400cb52c65205966fdf7-ModemManager.service-JNh9d0
+systemd-private-13b364fa0c29400cb52c65205966fdf7-power-profiles-daemon.service-k1CdKJ
+systemd-private-13b364fa0c29400cb52c65205966fdf7-rtkit-daemon.service-Z1qYYR
+systemd-private-13b364fa0c29400cb52c65205966fdf7-switcheroo-control.service-OvivTE
+systemd-private-13b364fa0c29400cb52c65205966fdf7-systemd-logind.service-QygfHU
+systemd-private-13b364fa0c29400cb52c65205966fdf7-upower.service-78V0Fq
+VMwareDnD
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data/data-1/data-2
+[root@localhost data-2]# 
+[root@localhost data-2]# ls /tmp 
+data-3
+systemd-private-13b364fa0c29400cb52c65205966fdf7-chronyd.service-uZURyz
+systemd-private-13b364fa0c29400cb52c65205966fdf7-colord.service-BPr9Rg
+systemd-private-13b364fa0c29400cb52c65205966fdf7-dbus-broker.service-YMHkT2
+systemd-private-13b364fa0c29400cb52c65205966fdf7-fwupd.service-iM7VSj
+systemd-private-13b364fa0c29400cb52c65205966fdf7-ModemManager.service-JNh9d0
+systemd-private-13b364fa0c29400cb52c65205966fdf7-power-profiles-daemon.service-k1CdKJ
+systemd-private-13b364fa0c29400cb52c65205966fdf7-rtkit-daemon.service-Z1qYYR
+systemd-private-13b364fa0c29400cb52c65205966fdf7-switcheroo-control.service-OvivTE
+systemd-private-13b364fa0c29400cb52c65205966fdf7-systemd-logind.service-QygfHU
+systemd-private-13b364fa0c29400cb52c65205966fdf7-upower.service-78V0Fq
+VMwareDnD
+[root@localhost data-2]# 
+[root@localhost data-2]# ls  ~
+abc              data-1   Documents  Music     Public     Videos
+anaconda-ks.cfg  Desktop  Downloads  Pictures  Templates
+[root@localhost data-2]# 
+[root@localhost data-2]# ls  /root 
+abc              data-1   Documents  Music     Public     Videos
+anaconda-ks.cfg  Desktop  Downloads  Pictures  Templates
+[root@localhost data-2]# 
+[root@localhost data-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd -
+/data/data-1/data-2
+[root@localhost data-2]# 
+[root@localhost data-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data
+[root@localhost data]# cd
+[root@localhost ~]# 
+[root@localhost ~]# date
+Sun Jan 29 10:23:15 AM IST 2023
+[root@localhost ~]# 
+[root@localhost ~]# cal
+    January 2023    
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31            
+                    
+[root@localhost ~]# cd -
+/data
+[root@localhost data]# 
+[root@localhost data]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  /data
+[root@localhost data]# 
+[root@localhost data]# cd ..
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /data
+[root@localhost data]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd /data
+[root@localhost data]# 
+[root@localhost data]# cd ~
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /data
+[root@localhost data]# 
+[root@localhost data]# cd  /root 
+[root@localhost ~]# 
+[root@localhost ~]# ls /data
+data-1
+[root@localhost ~]# ls /data/data-1
+data-2
+[root@localhost ~]# ls /data/data-1/data-2
+[root@localhost ~]# 
+[root@localhost ~]# tree  /data 
+/data
+└── data-1
+    └── data-2
+
+2 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# touch /data/data-1/abc1
+[root@localhost ~]# 
+[root@localhost ~]# touch  /data/data-1/data-2/abc2
+[root@localhost ~]# 
+[root@localhost ~]# ls /data/data-1
+abc1  data-2
+[root@localhost ~]# 
+[root@localhost ~]# ls /data/data-1/data-2
+abc2
+[root@localhost ~]# 
+[root@localhost ~]# tree  /data
+/data
+└── data-1
+    ├── abc1
+    └── data-2
+        └── abc2
+
+2 directories, 2 files
+[root@localhost ~]# 
+[root@localhost ~]# ls -R  /data  
+/data:
+data-1
+
+/data/data-1:
+abc1  data-2
+
+/data/data-1/data-2:
+abc2
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              data-1   Documents  Music     Public     Videos
+anaconda-ks.cfg  Desktop  Downloads  Pictures  Templates
+[root@localhost ~]# 
+[root@localhost ~]# cd Documents
+[root@localhost Documents]# ls
+[root@localhost Documents]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd documents
+bash: cd: documents: No such file or directory
+[root@localhost ~]# 
+[root@localhost ~]# cd Documents
+[root@localhost Documents]# 
+[root@localhost Documents]# pwd
+/root/Documents
+[root@localhost Documents]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd /root/Documents
+[root@localhost Documents]# cd
+
+
+[root@localhost ~]# touch abc 
+[root@localhost ~]# ls
+abc              data-1   Documents  Music     Public     Videos
+anaconda-ks.cfg  Desktop  Downloads  Pictures  Templates
+[root@localhost ~]# 
+[root@localhost ~]# cat abc 
+[root@localhost ~]# 
+[root@localhost ~]# echo  hello india > abc  
+[root@localhost ~]# 
+[root@localhost ~]# cat abc 
+hello india
+[root@localhost ~]# 
+
+[root@localhost ~]# mkdir /redhat
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /redhat/linux
+[root@localhost ~]# 
+[root@localhost ~]# ls /redhat
+linux
+[root@localhost ~]# cd  /redhat
+[root@localhost redhat]# ls
+linux
+[root@localhost redhat]# mkdir fedora
+[root@localhost redhat]# ls
+fedora  linux
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls  /redhat
+fedora  linux
+[root@localhost ~]# 
+[root@localhost ~]# tree  /redhat
+/redhat
+├── fedora
+└── linux
+
+2 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /redhat/fedora/abc-1
+[root@localhost ~]# 
+[root@localhost ~]# ls /redhat
+fedora  linux
+[root@localhost ~]# 
+[root@localhost ~]# ls /redhat/fedora
+abc-1
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat/linux
+[root@localhost linux]# ls
+[root@localhost linux]# mkdir abc-2
+[root@localhost linux]# ls
+abc-2
+[root@localhost linux]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls  /redhat/linux
+abc-2
+[root@localhost ~]# 
+[root@localhost ~]# ls  /redhat/fedora
+abc-1
+[root@localhost ~]# 
+[root@localhost ~]# tree  /redhat
+/redhat
+├── fedora
+│   └── abc-1
+└── linux
+    └── abc-2
+
+4 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# ls -R  /redhat
+/redhat:
+fedora  linux
+
+/redhat/fedora:
+abc-1
+
+/redhat/fedora/abc-1:
+
+/redhat/linux:
+abc-2
+
+/redhat/linux/abc-2:
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat
+[root@localhost redhat]# ls
+fedora  linux
+[root@localhost redhat]# cd fedora
+[root@localhost fedora]# 
+[root@localhost fedora]# ls
+abc-1
+[root@localhost fedora]# 
+[root@localhost fedora]# cd abc-1
+[root@localhost abc-1]# 
+[root@localhost abc-1]# pwd
+/redhat/fedora/abc-1
+[root@localhost abc-1]# 
+[root@localhost abc-1]# cd  ..
+[root@localhost fedora]# 
+[root@localhost fedora]# cd  ../..
+[root@localhost /]# 
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat/fedora/abc-1
+[root@localhost abc-1]# 
+[root@localhost abc-1]# cd /  
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat/
+[root@localhost redhat]# 
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat
+[root@localhost redhat]# 
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /tmp/rajat
+[root@localhost ~]# 
+[root@localhost ~]# cd   /redhat
+[root@localhost redhat]# ls
+fedora  linux
+[root@localhost redhat]# 
+[root@localhost redhat]# cd  /tmp/rajat 
+[root@localhost rajat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls /redhat/linux/abc-2
+[root@localhost ~]# 
+[root@localhost ~]# cd /
+[root@localhost /]# cd redhat
+[root@localhost redhat]# cd linux
+[root@localhost linux]# cd abc-2
+[root@localhost abc-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd /redhat/linux/abc-2
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls
+[root@localhost abc-2]# ls /root 
+abc  anaconda-ks.cfg  data-1  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls  /
+abc  bin   data    dev  home  lib64  mnt  proc    root  sbin  sys  usr
+afs  boot  data-2  etc  lib   media  opt  redhat  run   srv   tmp  var
+[root@localhost abc-2]# 
+[root@localhost abc-2]# cd
+
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /kr
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /kr/network
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /kr/network/cloud 
+[root@localhost ~]# 
+[root@localhost ~]# tree  /kr 
+/kr
+└── network
+    └── cloud
+
+2 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir   /tata/tcs/mnc
+mkdir: cannot create directory ‘/tata/tcs/mnc’: No such file or directory
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  -p   /tata/tcs/mnc
+[root@localhost ~]# 
+[root@localhost ~]# tree  /tata
+/tata
+└── tcs
+    └── mnc
+
+2 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  --help
+Usage: mkdir [OPTION]... DIRECTORY...
+Create the DIRECTORY(ies), if they do not already exist.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+  -p, --parents     no error if existing, make parent directories as needed
+  -v, --verbose     print a message for each created directory
+  -Z                   set SELinux security context of each created directory
+                         to the default type
+      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
+                         or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation <https://www.gnu.org/software/coreutils/mkdir>
+or available locally via: info '(coreutils) mkdir invocation'
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir    /tata/tcs/mnc/redhat 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir   -p   /tata/tcs/mnc/redhat/fedora/linux
+[root@localhost ~]# 
+[root@localhost ~]# tree  /tata
+/tata
+└── tcs
+    └── mnc
+        └── redhat
+            └── fedora
+                └── linux
+
+5 directories, 0 files
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  /suselinux
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /suselinux/ubuntu
+[root@localhost ~]# mkdir /suselinux/ubuntu/kali
+[root@localhost ~]# 
+[root@localhost ~]# mkdir /suselinux/abc{1..3}
+[root@localhost ~]# 
+[root@localhost ~]# ls  /suselinux
+abc1  abc2  abc3  ubuntu
+[root@localhost ~]# 
+[root@localhost ~]# mkdir -p  /suselinux/abc2/abc5/abc6
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  -p  -v  /linuxclasses/KR/NETWORK
+mkdir: created directory '/linuxclasses'
+mkdir: created directory '/linuxclasses/KR'
+mkdir: created directory '/linuxclasses/KR/NETWORK'
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  -p    /linuxclasses/KR/NETWORK/redhat/linux
+[root@localhost ~]# 
+[root@localhost ~]# cd  /redhat
+[root@localhost redhat]# ls
+fedora  linux
+[root@localhost redhat]# cd linux
+[root@localhost linux]# ls
+abc-2
+[root@localhost linux]# cd abc-2
+[root@localhost abc-2]# ls
+[root@localhost abc-2]# pwd
+/redhat/linux/abc-2
+[root@localhost abc-2]# 
+[root@localhost abc-2]# cd  ..
+[root@localhost linux]# cd  ../..
+[root@localhost /]# cd /
+[root@localhost /]# cd 
+[root@localhost ~]# 
+[root@localhost ~]# cd /redhat
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd /redhat
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd -
+/redhat
+[root@localhost redhat]# 
+[root@localhost redhat]# cd
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /redhat
+[root@localhost redhat]# ls
+fedora  linux
+[root@localhost redhat]# cd linux
+[root@localhost linux]# 
+[root@localhost linux]# ls
+abc-2
+[root@localhost linux]# 
+[root@localhost linux]# cd abc-2
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls
+[root@localhost abc-2]# 
+[root@localhost abc-2]# pwd
+/redhat/linux/abc-2
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls
+[root@localhost abc-2]# ls ~
+abc  anaconda-ks.cfg  data-1  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[root@localhost abc-2]# 
+[root@localhost abc-2]# touch  /root/rajat
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls ~
+abc              data-1   Documents  Music     Public  Templates
+anaconda-ks.cfg  Desktop  Downloads  Pictures  rajat   Videos
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls  /root 
+abc              data-1   Documents  Music     Public  Templates
+anaconda-ks.cfg  Desktop  Downloads  Pictures  rajat   Videos
+[root@localhost abc-2]# 
+[root@localhost abc-2]# touch ../kapil
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls  ..
+abc-2  kapil
+[root@localhost abc-2]# 
+[root@localhost abc-2]# touch  ../../kapil
+[root@localhost abc-2]# 
+[root@localhost abc-2]# pwd
+/redhat/linux/abc-2
+[root@localhost abc-2]# ls  ../..
+fedora  kapil  linux
+[root@localhost abc-2]# 
+[root@localhost abc-2]# touch /xyz 
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls  /
+abc  bin   data    dev  home  lib    linuxclasses  mnt  proc    root  sbin  suselinux  tata  usr  xyz
+afs  boot  data-2  etc  kr    lib64  media         opt  redhat  run   srv   sys        tmp   var
+[root@localhost abc-2]# 
+[root@localhost abc-2]# mkdir /tmp/alok 
+[root@localhost abc-2]# 
+[root@localhost abc-2]# ls  /tmp
+alok
+data-3
+rajat
+systemd-private-13b364fa0c29400cb52c65205966fdf7-chronyd.service-uZURyz
+systemd-private-13b364fa0c29400cb52c65205966fdf7-colord.service-BPr9Rg
+systemd-private-13b364fa0c29400cb52c65205966fdf7-dbus-broker.service-YMHkT2
+systemd-private-13b364fa0c29400cb52c65205966fdf7-fwupd.service-iM7VSj
+systemd-private-13b364fa0c29400cb52c65205966fdf7-ModemManager.service-JNh9d0
+systemd-private-13b364fa0c29400cb52c65205966fdf7-power-profiles-daemon.service-k1CdKJ
+systemd-private-13b364fa0c29400cb52c65205966fdf7-rtkit-daemon.service-Z1qYYR
+systemd-private-13b364fa0c29400cb52c65205966fdf7-switcheroo-control.service-OvivTE
+systemd-private-13b364fa0c29400cb52c65205966fdf7-systemd-logind.service-QygfHU
+systemd-private-13b364fa0c29400cb52c65205966fdf7-upower.service-78V0Fq
+VMwareDnD
+[root@localhost abc-2]# 
+[root@localhost abc-2]# cd
+[root@localhost ~]# 
+[root@localhost ~]# mkdir linux
+[root@localhost ~]# 
+[root@localhost ~]# mkdir ../linux
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              data-1   Documents  linux  Pictures  rajat      Videos
+anaconda-ks.cfg  Desktop  Downloads  Music  Public    Templates
+[root@localhost ~]# 
+[root@localhost ~]# ls ..
+abc  bin   data    dev  home  lib    linux         media  opt   redhat  run   srv        sys   tmp  var
+afs  boot  data-2  etc  kr    lib64  linuxclasses  mnt    proc  root    sbin  suselinux  tata  usr  xyz
+[root@localhost ~]# 
+[root@localhost ~]# mkdir ~/redhat
+[root@localhost ~]# ls
+abc              data-1   Documents  linux  Pictures  rajat   Templates
+anaconda-ks.cfg  Desktop  Downloads  Music  Public    redhat  Videos
+[root@localhost ~]# 
+
+[root@localhost ~]# 
+[root@localhost ~]# cd /
+[root@localhost /]# 
+[root@localhost /]# ls
+abc  bin   data    dev  home  lib    linux         media  opt   redhat  run   srv        sys   tmp  var
+afs  boot  data-2  etc  kr    lib64  linuxclasses  mnt    proc  root    sbin  suselinux  tata  usr  xyz
+[root@localhost /]# 
+[root@localhost /]# cd etc
+[root@localhost etc]# 
+[root@localhost etc]# ls
+
+[root@localhost ~]# cd  /redhat
+[root@localhost redhat]# cd ..
+[root@localhost /]# cd
+[root@localhost ~]# 
+[root@localhost ~]# cd .
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              data-1   Documents  linux  Pictures  rajat   Templates
+anaconda-ks.cfg  Desktop  Downloads  Music  Public    redhat  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls  .
+abc              data-1   Documents  linux  Pictures  rajat   Templates
+anaconda-ks.cfg  Desktop  Downloads  Music  Public    redhat  Videos
+[root@localhost ~]# 
+[root@localhost ~]# mkdir alok
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat     Videos
+alok  data-1           Documents  linux      Pictures  rajat   Templates
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  ./sanjeev
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+[root@localhost ~]# mkdir  ../sanjeev
+[root@localhost ~]# 
+[root@localhost ~]# ls  ..
+abc  boot    dev   kr     linux         mnt   redhat  sanjeev  suselinux  tmp  xyz
+afs  data    etc   lib    linuxclasses  opt   root    sbin     sys        usr
+bin  data-2  home  lib64  media         proc  run     srv      tata       var
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cd /redhat/linux
+[root@localhost linux]# 
+[root@localhost linux]# pwd
+/redhat/linux
+[root@localhost linux]# 
+[root@localhost linux]# cp   /etc/passwd  /redhat/linux  
+[root@localhost linux]# 
+[root@localhost linux]# ls
+abc-2  kapil  passwd
+[root@localhost linux]# 
+[root@localhost linux]# cp   /etc/group   .
+[root@localhost linux]# ls
+abc-2  group  kapil  passwd
+[root@localhost linux]# 
+[root@localhost linux]# cd
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+[root@localhost ~]# file  /home 
+/home: directory
+[root@localhost ~]# 
+[root@localhost ~]# file  /
+/: directory
+[root@localhost ~]# 
+[root@localhost ~]# file  /etc
+/etc: directory
+[root@localhost ~]# 
+[root@localhost ~]# file  /redhat
+/redhat: directory
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+[root@localhost ~]# file  /etc/passwd 
+/etc/passwd: ASCII text
+[root@localhost ~]# 
+[root@localhost ~]# file anaconda-ks.cfg 
+anaconda-ks.cfg: ASCII text
+[root@localhost ~]# 
+[root@localhost ~]# touch xyz 
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates  xyz
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+[root@localhost ~]# file xyz 
+xyz: empty
+[root@localhost ~]# echo  hello > xyz 
+[root@localhost ~]# cat xyz 
+hello
+[root@localhost ~]# 
+[root@localhost ~]# file xyz 
+xyz: ASCII text
+[root@localhost ~]# 
+[root@localhost ~]# ls 
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates  xyz
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+[root@localhost ~]# ls -l 
+total 12
+-rw-r--r--. 1 root root   12 Jan 29 10:31 abc
+drwxr-xr-x. 2 root root    6 Jan 29 11:14 alok
+-rw-------. 1 root root 1157 Jan  7 13:08 anaconda-ks.cfg
+drwxr-xr-x. 3 root root   20 Jan 29 10:33 data-1
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Desktop
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Documents
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Downloads
+drwxr-xr-x. 2 root root    6 Jan 29 10:59 linux
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Music
+drwxr-xr-x. 2 root root   53 Jan 29 10:13 Pictures
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Public
+-rw-r--r--. 1 root root    0 Jan 29 10:56 rajat
+drwxr-xr-x. 2 root root    6 Jan 29 10:59 redhat
+drwxr-xr-x. 2 root root    6 Jan 29 11:14 sanjeev
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Templates
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Videos
+-rw-r--r--. 1 root root    6 Jan 29 11:22 xyz
+[root@localhost ~]# ll
+total 12
+-rw-r--r--. 1 root root   12 Jan 29 10:31 abc
+drwxr-xr-x. 2 root root    6 Jan 29 11:14 alok
+-rw-------. 1 root root 1157 Jan  7 13:08 anaconda-ks.cfg
+drwxr-xr-x. 3 root root   20 Jan 29 10:33 data-1
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Desktop
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Documents
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Downloads
+drwxr-xr-x. 2 root root    6 Jan 29 10:59 linux
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Music
+drwxr-xr-x. 2 root root   53 Jan 29 10:13 Pictures
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Public
+-rw-r--r--. 1 root root    0 Jan 29 10:56 rajat
+drwxr-xr-x. 2 root root    6 Jan 29 10:59 redhat
+drwxr-xr-x. 2 root root    6 Jan 29 11:14 sanjeev
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Templates
+drwxr-xr-x. 2 root root    6 Jan  7 13:11 Videos
+-rw-r--r--. 1 root root    6 Jan 29 11:22 xyz
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cat  /etc/redhat-release 
+Red Hat Enterprise Linux release 9.0 (Plow)
+[root@localhost ~]# 
+[root@localhost ~]# cat  /etc/system-release
+Red Hat Enterprise Linux release 9.0 (Plow)
+[root@localhost ~]# 
+[root@localhost ~]# ls -l   /etc/system-release
+lrwxrwxrwx. 1 root root 14 Apr  6  2022 /etc/system-release -> redhat-release
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls -l /etc/redhat-release 
+-rw-r--r--. 1 root root 44 Apr  6  2022 /etc/redhat-release
+[root@localhost ~]# 
+[root@localhost ~]# useradd ravi
+[root@localhost ~]# adduser kapil
+[root@localhost ~]# 
+[root@localhost ~]# ls  /
+abc  boot    dev   kr     linux         mnt   redhat  sanjeev  suselinux  tmp  xyz
+afs  data    etc   lib    linuxclasses  opt   root    sbin     sys        usr
+bin  data-2  home  lib64  media         proc  run     srv      tata       var
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc   anaconda-ks.cfg  Desktop    Downloads  Music     Public  redhat   Templates  xyz
+alok  data-1           Documents  linux      Pictures  rajat   sanjeev  Videos
+[root@localhost ~]# 
+
+  310  file  /etc/redhat-release 
+  311  file  /etc/system-release
+  312  ls  /
+  313  file  /lib
+  314  ls /lib 
+  315  ls /usr/lib
+  316  ls  /lib64
+  317  ls  /usr/lib64
+[root@localhost ~]# ls  /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        1.8G     0  1.8G   0% /dev
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           740M  9.6M  730M   2% /run
+/dev/sda2        15G  3.9G   11G  27% /
+/dev/sda1      1014M  256M  759M  26% /boot
+tmpfs           370M  100K  370M   1% /run/user/0
+/dev/sr0        8.0G  8.0G     0 100% /run/media/root/RHEL-9-0-0-BaseOS-x86_64
+[root@localhost ~]# 
+[root@localhost ~]# du -sh  /etc  
+27M	/etc
+[root@localhost ~]# du -sh  /home 
+12K	/home
+[root@localhost ~]# ls  /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# du -sh /usr 
+3.6G	/usr
+[root@localhost ~]# ls -l  -d  /lib 
+lrwxrwxrwx. 1 root root 7 Aug 10  2021 /lib -> usr/lib
+[root@localhost ~]# 
+[root@localhost ~]# ls -l  -d  /usr/lib 
+dr-xr-xr-x. 37 root root 4096 Jan  7 13:02 /usr/lib
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# ls  /usr 
+bin  games  include  lib  lib64  libexec  local  sbin  share  src  tmp
+[root@localhost ~]# 
+[root@localhost ~]# du -sh  /usr 
+3.6G	/usr
+[root@localhost ~]# 
+[root@localhost ~]# ls /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        1.8G     0  1.8G   0% /dev
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           740M  9.6M  730M   2% /run
+/dev/sda2        15G  3.9G   11G  27% /
+/dev/sda1      1014M  256M  759M  26% /boot
+tmpfs           370M  100K  370M   1% /run/user/0
+/dev/sr0        8.0G  8.0G     0 100% /run/media/root/RHEL-9-0-0-BaseOS-x86_64
+[root@localhost ~]# 
+   15  which useradd 
+   16  which usermod  
+   17  which clear
+   18  which tree 
+   19  which adduser
+   20  ls  -l /usr/sbin/adduser
+   21  ls  -l /usr/sbin/useradd 
+   22  ls /
+   23  ls -l  -d /bin 
+   24  ls -l  -d /sbin 
+   25  ls -l  -d /lib
+   26  ls -l  -d /lib64
+   27  ls /
+   28  ls  /bin 
+   29  which  tree
+   30  which  fdisk 
+[root@localhost ~]# which  parted 
+/usr/sbin/parted
+[root@localhost ~]# which  fdisk 
+/usr/sbin/fdisk
+[root@localhost ~]# 
+[root@localhost ~]# which  clear
+/usr/bin/clear
+[root@localhost ~]# 
+[root@localhost ~]# su - student  
+[student@localhost ~]$ 
+[student@localhost ~]$ clear 
+
+[student@localhost ~]$ fdisk -l 
+fdisk: cannot open /dev/sda: Permission denied
+fdisk: cannot open /dev/sr0: Permission denied
+[student@localhost ~]$ 
+[student@localhost ~]$ useradd raju
+useradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+[student@localhost ~]$ 
+[student@localhost ~]$ which useradd 
+/usr/sbin/useradd
+[student@localhost ~]$ which fdisk 
+/usr/sbin/fdisk
+[student@localhost ~]$ exit
+logout
+[root@localhost ~]# 
+
+[root@localhost ~]# ls /
+afs  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+[root@localhost ~]# 
+[root@localhost ~]# file  /usr/sbin/useradd 
+/usr/sbin/useradd: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=7f7a38cb30e4cb2eb6754864f7f133a1248c8bcf, for GNU/Linux 3.2.0, stripped
+[root@localhost ~]# 
+[root@localhost ~]# file  /usr/sbin/adduser 
+/usr/sbin/adduser: symbolic link to useradd
+[root@localhost ~]# 
+[root@localhost ~]# ls  -l    /usr/sbin/adduser 
+lrwxrwxrwx. 1 root root 7 Dec  3  2021 /usr/sbin/adduser -> useradd
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+[root@localhost ~]# mkdir  /red 
+[root@localhost ~]# mkdir  /blue
+[root@localhost ~]# 
+[root@localhost ~]# touch  /red/abc
+[root@localhost ~]# 
+[root@localhost ~]# ls /red
+abc
+[root@localhost ~]# 
+[root@localhost ~]# ls  /blue
+[root@localhost ~]# 
+[root@localhost ~]# ln -s  /red/abc   /blue/xyz  
+[root@localhost ~]# 
+[root@localhost ~]# ls /red
+abc
+[root@localhost ~]# ls /blue
+xyz
+[root@localhost ~]# ls -l  /blue/xyz 
+lrwxrwxrwx. 1 root root 8 Jan 29 11:57 /blue/xyz -> /red/abc
+[root@localhost ~]# 
+[root@localhost ~]# cat /red/abc 
+[root@localhost ~]# cat /blue/xyz 
+[root@localhost ~]# 
+[root@localhost ~]# echo hello >  /red/abc 
+[root@localhost ~]# 
+[root@localhost ~]# cat /red/abc 
+hello
+[root@localhost ~]# cat /blue/xyz 
+hello
+[root@localhost ~]# ls -l  /blue/xyz
+lrwxrwxrwx. 1 root root 8 Jan 29 11:57 /blue/xyz -> /red/abc
+[root@localhost ~]# 
+[root@localhost ~]# rm  -f   /blue/xyz 
+[root@localhost ~]# 
+[root@localhost ~]# ls /blue
+[root@localhost ~]# ls /red
+abc
+[root@localhost ~]# cat  /red/abc 
+hello
+[root@localhost ~]# 
+[root@localhost ~]# cat /etc/redhat-release 
+Red Hat Enterprise Linux release 9.0 (Plow)
+[root@localhost ~]# 
+[root@localhost ~]# cat /etc/system-release
+Red Hat Enterprise Linux release 9.0 (Plow)
+[root@localhost ~]# 
+[root@localhost ~]# ls -l  /etc/system-release
+lrwxrwxrwx. 1 root root 14 Apr  6  2022 /etc/system-release -> redhat-release
+[root@localhost ~]# 
+[root@localhost ~]# ls -l  /etc/redhat-release 
+-rw-r--r--. 1 root root 44 Apr  6  2022 /etc/redhat-release
+[root@localhost ~]# 
+[root@localhost ~]# 
+
+
+================================
+
+mkdir  ==> to create any directory
+mkdir -p  ==> to create directory with parent concept
+ls ==> to check data listing
+cat ==> to read content of any file on the screen
+ls -R ==> to check entire in data of any directory
+tree  ==> to check data in tree format
+cd  <directoryname>  ==> to enter into any directory
+cd  ..  ==> just go on one level back
+cd  ../..  ==> two level back
+cd  /   == to reach on parent direcotory
+
+cd OR cd ~ or cd /root ==> to go into my home directory
+
+cd  -   ==> to go on last working directory
+
+cd  .   ==> Current working directory
+
+which  ==> to find out the location of any command in my machine.
+
+
+What is the use of tab key ?  to complete the path
+
+================================
+ 
+Types of path ?
+
+1- Relative path
+2- Absolute path
+
+================================
+
+RPM install 
+RPM information   ==> HOLD
+RPM erase
+RPM update
+===============================
