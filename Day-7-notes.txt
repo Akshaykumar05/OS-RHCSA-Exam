@@ -1,0 +1,425 @@
+=======================================
+   Day-7  Notes
+=======================================
+[root@localhost ~]# history 
+    1  ls 
+    2  ls  /
+    3  ls /etc
+    4  cat  /etc/crontab 
+    5  cat  /etc/passwd
+    6  useradd user1
+    7  useradd user2
+    8  useradd user3
+    9  useradd user4
+   10  useradd user5
+   11  ls  /home 
+   12  cat  /etc/passwd
+   13  cat  /etc/group 
+   14  ls  
+   15  cat anaconda-ks.cfg 
+   16  cat  /etc/crontab 
+   17  cat -n   /etc/crontab 
+   18  cat  /etc/passwd
+   19  cat -n   /etc/passwd
+   20  cat  /etc/crontab   /etc/passwd
+   21  cat  -n  /etc/crontab   /etc/passwd
+   22  tac  /etc/passwd   
+   23  tac -n   /etc/passwd   
+   24  cat --help 
+   25  cat --number  /etc/crontab 
+   26  cat -n   /etc/crontab 
+   27  tac  --help 
+   28  tac -n /etc/passwd
+   29  tac --help
+   30  cat --help 
+   31  cat -n  /etc/passwd
+   32  cat -b  /etc/passwd
+   33  cat -n  /etc/crontab 
+   34  cat -b  /etc/crontab 
+   35  ls /etc/NetworkManager/system-connections
+   36  cat /etc/NetworkManager/system-connections/ens160.nmconnection 
+   37  cd /etc/NetworkManager/system-connections
+   38  ls
+   39  cat ens160.nmconnection 
+   40  cd
+   41  cd /etc 
+   42  ls
+   43  cd NetworkManager
+   44  ls
+   45  cd system-connections
+   46  ls
+   47  cat ens160.nmconnection 
+   48  cd
+   49  history 
+
+=======================================
+
+   49  history 
+   50  echo 
+   51  echo  hello
+   52  echo  hello india
+   53  echo  "hello india"
+   54  echo  'hello india'
+   55  echo  hello india
+   56  history 
+
+
+========================================
+  57  cat  /etc/passwd
+   58  wc    /etc/passwd
+   59  wc  -l    /etc/passwd
+   60  wc  -w    /etc/passwd
+   61  wc  -c    /etc/passwd
+   62  wc  -l  -w      /etc/passwd
+   63  wc  /etc/passwd  /etc/group 
+   64  wc  -l   /etc/passwd  /etc/group 
+   65  wc  -l /etc/crontab 
+   66  wc  -l /etc/crontab  /etc/passwd 
+   67  cat -n  /etc/crontab ; cat -n    /etc/passwd 
+   68  wc -l /etc/passwd
+   69  rpm -q  -a 
+   70  rpm -q  -a |  wc -l 
+   71  rpm -qa |  wc -l 
+   72  ls
+   73  ls | wc -l 
+   74  wc  -l /etc/passwd
+   75  cat /etc/passwd | wc -l 
+   76  rpm -q  -a 
+   77  rpm -q  -a | wc -l 
+   78  date 
+   79  cal 
+   80  date  cal 
+   81  date
+   82  cal
+   83  date  ;  cal 
+   84  date ; cal ; echo  "hello"  ; useradd rajeev
+   85  ls  /home 
+   86  date ; cals ; echo  "hello"  
+   87  date
+   88  cal
+   89  echo hello
+   90  useradd deepak
+   91  passwd deepak
+   92  useradd raj ; passwd raj 
+   93  cat -n  /etc/crontab ; cat -n /etc/passwd 
+   94  date ; cal
+   95  date 
+   96  cal
+   97  history 
+  98  echo  hello
+   99  echo  hello india
+  100  echo  hello ; echo  hello india
+  101  systemctl restart crond ; systemctl enable crond 
+  102  systemctl restart crond
+  103  systemctl enable crond
+  104  history 
+
+============================
+ 105  lsblk 
+  106  lsblk ;  cat -n /etc/crontab 
+  107  lsblk | cat -n 
+  108  lsblk 
+  109  lsblk | wc  -l 
+  110  rpm -qa | wc -l 
+  111  ls  | wc -l 
+  112  lsblk | cat -n 
+  113  grep root  /etc/passwd
+  114  lsblk 
+  115  lsblk | cat -n 
+  116  lsblk | cat -n  | grep boot 
+  117  head -n  2  /etc/passwd
+  118  lsblk 
+  119  lsblk | cat -n 
+  120  lsblk | cat -n  | head -n 2 
+  121  lsblk | cat -n  | head -n 5
+  122  lsblk | cat -n  | head -n 5  | grep disk 
+  123  lscpu 
+  124  lscpu  | cat -n 
+  125  lscpu  | cat -n | head  -n 15 
+  126  lscpu  | cat -n | head  -n 15  |  grep BIOS
+  127  lsblk 
+  128  lsblk  | cat -n 
+  129  lsblk  | cat -n  | head  -n 2 
+  130  lscpu | cat -n  |  head  -n 3
+  131  lsblk  | cat -n  | head  -n 2  ;  lscpu | cat -n  |  head  -n 3
+  132  lsblk 
+  133  lsblk | cat -n 
+  134  lsblk | cat
+  135  lsblk 
+  136  head -n  2 /etc/passwd
+  137  grep root /etc/passwd
+  138  cat -n /etc/passwd 
+  139  wc  -l /etc/passwd
+  140  cat -n /etc/passwd
+  141  head -n 2 /etc/passwd
+  142  grep root  /etc/passwd
+  143  lsblk ; touch  abc 
+  144  ls
+  145  lsblk | head -n 2
+  146  lsblk | grep disk
+  147  lsblk | wc -l 
+  148  lsblk | head -n 15   
+  149  lsblk | head -n 3
+  150  lsblk | head -n 3 | wc -l  
+  151  lsblk | head -n 3 | wc -l 
+  152  ifconfig 
+  153  ifconfig  |  grep  inet 
+  154  ifconfig  |  grep  -w inet 
+  155  ifconfig  |  grep  -w inet  |  head -n 1
+  156  ifconfig  |  grep  -w inet  |  tail -n 1
+  157  ifconfig  |  grep  -w inet  |  head -n 1
+  158  ifconfig  |  grep  -w inet  |  head -n 1 | sed  's/inet/ip address/'
+  159  history 
+ 160  useradd rakesh ;   lsblk 
+  161  date ; echo ; ls
+  162  ls | grep anaconda
+  163  ls
+  164  ls | grep abc
+  165  ls | wc -l 
+  166  ls  /etc 
+  167  ls  /etc  | wc -l 
+  168  ls /home | wc -l 
+  169  ls  /home
+
+[root@localhost ~]# 
+
+=====================
+  171  lsblk 
+  172  mkdir  /data 
+  173  ls /data
+  174  echo  hello india  
+  175  echo  hello india  >  /data/abc  
+  176  ls /data
+  177  cat  /data/abc 
+  178  echo hello world  > /data/xyz 
+  179  cat /data/abc 
+  180  cat /data/xyz 
+  181  echo  hello krishna How are You ?  >>  /data/abc 
+  182  cat  /data/abc 
+  183  date 
+  184  date  >>  /data/abc 
+  185  cat  /data/abc 
+  186  cal >>  /data/abc 
+  187  cat  /data/abc 
+  188  date  >  /data/abc 
+  189  cat  /data/abc 
+  190  ls /data
+  191  rm  -f  /data/abc  
+  192  rm  -f  /data/xyz 
+  193  ls /data
+  194  echo  hello  india  >>  /data/abc 
+  195  cat  /data/abc 
+  196  ls /data
+  197  echo 
+  198  echo   >   /data/abc 
+  199  cat  /data/abc 
+  200  >  /data/abc 
+  201  cat /data/abc 
+  202  rm -f  /data/abc 
+  203  ls /data
+  204  lsblk 
+  205  ls  /
+  206  lsblk  > /report 
+  207  ls /
+  208  cat  /report 
+  209  date  >> /report 
+  210  cat  /report 
+  211  echo "This is my final report"  >>  /report 
+  212  cat  /report 
+  213  cat /report >  /backup
+  214  ls /
+  215  cat  /report 
+  216  cat /backup 
+  217  >  /report 
+  218  cat  /report 
+  219  cat  /backup 
+  220  rm -f  /report 
+  221  ls  /
+  222  cat  /backup
+  223  ls /
+  224  rm  /backup 
+  225  ls  /
+  226  rm  -f  /backup 
+  227  date ; cal 
+  228  date ; cal  >  /info 
+  229  cat  /info 
+  230  date > info ; cal  >>  /info 
+  231  date > /info ; cal  >>  /info 
+  232  cat  /info 
+  233  lsblk 
+  234  lsblk  | cat -n 
+  235  lsblk  | cat -n  | head  -n 3
+  236  lscpu | cat -n  |  head  -n 3 
+  237  lsblk  | cat -n  | head  -n 3 ;  lscpu | cat -n  |  head  -n 3 
+  238  lsblk  | cat -n  | head  -n 3 > /tmp/xyz ;  lscpu | cat -n  |  head  -n 3  >>  /tmp/xyz
+  239  cat  /tmp/xyz 
+  240  lsblk   | head  -n 3 > /tmp/xyz ;  lscpu  |  head  -n 3  >>  /tmp/xyz
+  241  cat  /tmp/xyz 
+  242   
+  243  ls /
+  244  echo  hello team-1   >  /test-1
+  245  ls  /
+  246  cat /test-1
+  247  echo  hello team-2   >  /test-2
+  248  cat /test-2
+  249  cat  /test-1   /test-2  
+  250  cat  /test-1   /test-2   >  /tmp/newfile  
+  251  cat  /tmp/newfile 
+  252  echo  hello  team-3  >  /test-3 
+  253  cat  /test-3 
+  254  cat  /test-3  >>  /tmp/newfile 
+  255  cat  /tmp/newfile 
+  256  cat  /test-1  /test-2   /test-3 
+  257  cat  /test-1  /test-2   /test-3  >  /krnetwork
+  258  cat  /krnetwork
+  259  >  /test-1
+  260  >  /test-2
+  261  >  /test-3
+  262  cat /test-1
+  263  cat /test-2
+  264  cat /test-3
+  265  rm -f /test-1  /test-2  /test-3 
+  266  ls /
+  267  cat  /tmp/newfile 
+  268  cat  /etc/passwd  /etc/group  >   /information  
+  269  cat /information 
+  270  cat  /etc/shadow  >>  /information 
+  271  cat  /information 
+  272  history 
+  273  cat  /etc/crontab 
+  274  cat  < /etc/crontab 
+  275  cat  < /etc/crontab >  /redhat  
+  276  cat  /redhat 
+  277  cat   /etc/crontab >  /redhat  
+  278  cat  /redhat 
+
+  280  lsblk 
+  281  lsblk > /linux 
+  282  cat  /linux 
+  283  date  >>  /linux 
+  284  cat  /linux 
+  285  rm -f  /linux 
+  286  lsblk | tee /linux 
+  287  cat  /linux 
+  288  date | tee  -a /linux
+  289  cat /linux 
+  290  echo hello this is my final report |  tee  -a  /linux 
+  291  cat /linux 
+  292  lsblk | head -n 3
+  293  lsblk | head -n 3 | tee   /red-info
+  294  lscpu |  head -n 2 | tee  -a /red-info 
+  295  cat /red-info 
+  296  rm -f  /red-info 
+  297  lsblk | head -n 2 
+  298  lscpu | head -n 2 
+  299  lsblk | head -n 2 ;  lscpu | head -n 2
+  300  lsblk | head -n 2 | tee /linux-data ;  lscpu | head -n 2 | tee -a  /linux-data
+  301  cat  /linux-data 
+  302  history 
+ 303  echo  hello india  | tee    /networkcloud 
+  304  cat  /networkcloud 
+  305  echo  hello world   | tee  -a    /networkcloud 
+  306  cat  /networkcloud 
+  307  cat  /networkcloud  >  /krishna  
+  308  cat  /krishna 
+  309  >  /networkcloud 
+  310  cat /networkcloud 
+  311  rm -f  /networkcloud 
+  312  history 
+  315  cat abc 
+  316  echo  hello india | tee -a  abc 
+  317  cat abc 
+  318  history 
+[root@localhost ~]# cat > xyz 
+Hello India
+Hello World
+Hello Krishna
+[root@localhost ~]# 
+[root@localhost ~]# ls
+abc              Desktop    Downloads  Music     Public     Videos
+anaconda-ks.cfg  Documents  info       Pictures  Templates  xyz
+[root@localhost ~]# 
+[root@localhost ~]# 
+[root@localhost ~]# cat xyz 
+Hello India
+Hello World                                     [ Note:- Press Ctrl + D  to save this content ]
+Hello Krishna
+[root@localhost ~]# cat >> xyz                           
+how are you ?
+i am fine
+[root@localhost ~]# 
+[root@localhost ~]# cat xyz 
+Hello India
+Hello World                                      [ Note:- Press Ctrl + D  to save this content ]
+Hello Krishna
+Hello Krishna
+how are you ?
+i am fine
+[root@localhost ~]# 
+  
+  323  cat xyz 
+  324  cat <  xyz 
+  325  cat <  xyz  > myfile
+  326  cat xyz 
+  327  cat myfile 
+  328  history 
+
+===================================
+
+  329  cat -n  /etc/crontab 
+  330  cat -n  /etc/crontab  | head -n 9
+  331  cat -n  /etc/crontab  | head -n 9 | tail -n 3
+  332  cat  /etc/crontab  | head -n 9 | tail -n 3
+  333  cat  /etc/crontab  | head -n 9 | tail -n 3  |  tee  /tmp/redhat
+  334  cat /tmp/redhat 
+  335  lsblk 
+  336  lsblk  | cat -n 
+  337  lsblk  | cat -n  |  head -n 5
+  338  lsblk  | cat -n  |  head -n 5 | tail -n 3
+  339  lsblk   |  head -n 5 | tail -n 3
+  340  lsblk   |  head -n 5 | tail -n 3  | tee  -a /tmp/redhat 
+  341  cat /tmp/redhat 
+  342  echo "############# output of lsblk command ################"  > /cloud 
+  343  cat  /cloud 
+  344  echo  -e  "\n\n"  >>   /cloud 
+  345  cat  /cloud 
+  346  lsblk  >> /cloud 
+  347  cat  /cloud 
+  348  echo  -e  "\n\n"  >>   /cloud 
+  349  cat  /cloud 
+  350  echo "############# output of uptime command ################"  >> /cloud 
+  351  cat /cloud 
+  352  echo  -e  "\n\n"  >>   /cloud 
+  353  cat /cloud 
+  354  uptime 
+  355  uptime  >> /cloud 
+  356  cat  /cloud 
+  357  echo  -e  "\n\n"  >>   /cloud 
+  358  cat /cloud 
+  359  echo   "########### Final Report ##################"  >>   /cloud 
+  360  cat /cloud 
+
+
+[root@localhost ~]# su - student 
+[student@localhost ~]$ 
+[student@localhost ~]$ lsblk 
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   30G  0 disk 
+├─sda1   8:1    0 1000M  0 part /boot
+├─sda2   8:2    0 14.6G  0 part /
+└─sda3   8:3    0    2G  0 part [SWAP]
+sr0     11:0    1 1024M  0 rom  
+[student@localhost ~]$ 
+[student@localhost ~]$ lsblk  >  /tmp/report 
+[student@localhost ~]$ cat  /tmp/report 
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0   30G  0 disk 
+├─sda1   8:1    0 1000M  0 part /boot
+├─sda2   8:2    0 14.6G  0 part /
+└─sda3   8:3    0    2G  0 part [SWAP]
+sr0     11:0    1 1024M  0 rom  
+[student@localhost ~]$ exit
+logout
+[root@localhost ~]# 
+
+=============================================================
