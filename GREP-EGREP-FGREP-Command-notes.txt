@@ -1,0 +1,246 @@
+==========================================
+    
+          Day-8 Session 
+
+           part-2
+
+==========================================
+
+1- cat
+2- tac
+3- head
+4- tail
+5- sed
+
+=========================================
+grep [Global regular expression print]
+
+ ==> it is use to search or print lines using any pattern or word or string
+    from any file or from any command output.
+
+
+
+
+# grep   <options>     <string or word>    <filename or location of the file>
+
+                         OR
+
+
+# <any-xyz-command>   | grep  <options>   <word or string>
+
+-n  ==> with line number
+-c  ==> count
+-i  ==> ignore case
+--color  ==> by default 
+-o    ==> only pattern
+-v    ==> invert matching
+-w   ==> exact word
+-A2
+-B2
+-C2
+
+
+
+=========================================
+
+1- grep
+2- egrep  OR   grep  -E
+3- fgrep  OR   grep  -F
+
+========================================
+
+[root@localhost ~]# history 
+    1  cat  /etc/passwd 
+    2  grep  root   /etc/passwd 
+    3  grep --color   root   /etc/passwd 
+    4  grep --color  ftp   /etc/passwd 
+    5  grep   ftp   /etc/passwd 
+    6  grep  -n root    /etc/passwd 
+    7  grep  -n root    /etc/passwd  >  /info 
+    8  cat  /info 
+    9  head -n 1  /etc/passwd
+   10  grep root  /etc/passwd
+   11  grep ftp   /etc/passwd
+   12  useradd dhoni  
+   13  grep  dhoni    /etc/passwd
+   14  grep -n  root  /etc/passwd
+   15  grep -c  root  /etc/passwd
+   16  grep  ROOT  /etc/passwd  
+   17  grep --help 
+   18  grep -i ROOT  /etc/passwd
+   19  grep -i root   /etc/passwd
+   20  grep root   /etc/passwd
+   21  grep root   /etc/passwd | wc -l 
+   22  grep  -c  root   /etc/passwd 
+   23  grep  dhcp /etc/passwd 
+   24  grep  -i  dhcp /etc/passwd 
+   25  grep  dns   /etc/passwd 
+   26  grep -i   dns   /etc/passwd 
+   27  grep -i  -n   dns   /etc/passwd 
+   28  grep -in   dns   /etc/passwd 
+   29  grep -i -n  root  /etc/passwd  
+   30  grep -n  -c  root  /etc/passwd  
+   31  grep -n  root  /etc/passwd  
+   32  grep -c  root  /etc/passwd  
+   33  grep root  /etc/passwd
+   34  grep -o  root  /etc/passwd
+   35  grep -o -n -i    root  /etc/passwd
+   36  grep -o  root  /etc/passwd | wc -l 
+   37  grep -o  root  /etc/passwd 
+   38  grep -o  root  /etc/passwd   > /tmp/string.txt
+   39  cat  /tmp/string.txt 
+   40  grep root  /etc/passwd
+   41  grep -o  root  /etc/passwd
+   42  grep root  /etc/passwd
+   43  wc -l  /etc/passwd
+   44  grep root  /etc/passwd | wc -l 
+   45  grep  -v   root  /etc/passwd
+   46  grep root  /etc/passwd  | wc -l  
+   47  grep -v   root  /etc/passwd  | wc -l  
+   48  wc  -l  /etc/passwd  
+   49  grep -c   root  /etc/passwd  
+   50  grep -c  -v    root  /etc/passwd  
+   51  grep  root  /etc/passwd  > /tmp/string-matching 
+   52  cat  /tmp/string-matching 
+   53  grep  -v  root  /etc/passwd  > /tmp/string-non-matching 
+   54  cat /tmp/string-non-matching 
+   55  cat  /etc/passwd  |  grep root 
+   56  cat  /etc/passwd  |  grep -n  root 
+   57  lsblk 
+   58  lsblk  | grep disk 
+   59  lsblk  | grep -v  disk 
+   60  lsblk  | grep swap 
+   61  lsblk  | grep -i swap 
+   62  lsblk  | grep -i -v  swap 
+   63  useradd  manish 
+   64  useradd  manisha
+   65  grep manish  /etc/passwd 
+   66  grep  -i dns  /etc/passwd
+   67  grep manish  /etc/passwd 
+   68  grep -w  manish  /etc/passwd 
+   69  grep rsync    /etc/services 
+   70  grep  873     /etc/services 
+   71  grep -w rsync    /etc/services 
+   72  grep -w  873    /etc/services 
+   73  grep -w  manisha     /etc/passwd
+   74  grep   manish     /etc/passwd
+   75  grep -w     manish     /etc/passwd
+   76  grep Root  /etc/passwd
+   77  cat /etc/passwd
+   78  grep -i Root  /etc/passwd
+   79  grep -i RoOt  /etc/passwd
+   80  grep ROOT  /etc/passwd
+   81  grep -i  ROOT  /etc/passwd
+   82  grep ftp /etc/passwd 
+   83  grep -n ftp /etc/passwd 
+   84  grep -n -A2   ftp /etc/passwd 
+   85  grep -n -A3   ftp /etc/passwd 
+   86  grep -n -B3   ftp /etc/passwd 
+   87  grep -n -C3   ftp /etc/passwd 
+   88  lsblk | grep boot  
+   89  lsblk | grep -C2  boot  
+   90  lsblk | grep -C1  boot  
+   91  lsblk | grep -B1  boot  
+   92  lsblk | grep -A1  boot  
+   93  lsblk | grep -C1  boot  
+   94  grep  ntp /etc/passwd
+   95  grep  -i  ntp /etc/passwd
+   96  grep  sssd   /etc/passwd
+   97  grep -n -A1   sssd   /etc/passwd
+   98  cat -n  /etc/passwd
+   99  sed -n '21,35p'  /etc/passwd
+  100  sed -n '21,35p'  /etc/passwd |  grep sshd 
+  101  head -n 35   /etc/passwd | tail -n 15 |    grep sshd 
+  102  grep root  /etc/passwd
+  103  grep ftp   /etc/passwd
+  104  grep root  /etc/passwd ;  grep ftp   /etc/passwd
+  105  grep -e "root"  -e  "ftp"  /etc/passwd
+  106  grep -n -i   -e "root"  -e  "ftp" -e sssd /etc/passwd
+  107  grep    root    ftp sssd /etc/passwd
+  108  grep -e "root"  -e  "ftp"  /etc/passwd
+  109  egrep  'root|ftp|sssd' /etc/passwd
+  110  egrep -i -n    'root|ftp|sssd' /etc/passwd
+  111  grep -E   -i -n    'root|ftp|sssd' /etc/passwd
+  112  grep -e "root"  -e  "ftp"  /etc/passwd
+  113  lsblk 
+  114  lsblk  | grep boot
+  115  lsblk  | grep -i swap 
+  116  lsblk  | grep -i  -e  "swap" -e "boot" 
+  117  lsblk  | grep -i  -E   "swap|boot" 
+  118  lsblk  | egrep -i     "swap|boot" 
+  119  lsblk | grep boot 
+  120  lsblk|grep boot 
+  121  lsblk| grep boot 
+  122  lsblk |grep boot 
+  123  lsblk | grep boot 
+  124  fgrep  root /etc/passwd   /etc/group
+  125  fgrep -n -i   root /etc/passwd   /etc/group
+  126  grep -F   -n -i   root /etc/passwd   /etc/group
+  127  grep   root /etc/passwd   /etc/group
+  128  grep -F  'root|ftp|sshd'  /etc/passwd  /etc/group
+  129  grep -E   'root|ftp|sshd'  /etc/passwd  /etc/group
+  130  grep -E   'root|ftp|sshd'  /etc/passwd
+  131  grep -n -i  -E   'root|ftp|sshd'  /etc/passwd
+  132  lscpu 
+  133  lscpu  |  grep  "model name"
+  134  lscpu  |  grep  "Model name"
+  135  lscpu  |  grep -i   "model name"
+  136  lscpu  |  grep -i   "CPU"
+  137  lscpu  |  grep -i   "CPUID"
+  138  ls
+  139  ls | grep ana 
+  140  ls /etc
+  141  ls /etc | grep crontab 
+  142  ls /etc 
+  143  ls /etc |  grep "rsyslog.conf"
+  144  grep root  /etc/passwd
+  145  grep "root"  /etc/passwd
+  146  grep 'root'  /etc/passwd
+  147  cat  /etc/passwd
+  148  grep  "DHCP and DNS"   /etc/passwd 
+  149  grep  'DHCP and DNS'   /etc/passwd 
+  150  grep root /etc/passwd
+  151  grep "root" /etc/passwd
+  152  grep root  /etc/passwd
+  153  grep  '^root'  /etc/passwd
+  154  grep  ^root  /etc/passwd
+  155  grep  ^ftp   /etc/passwd
+  156  grep  'bash$'   /etc/passwd
+  157  grep  ^ftp   /etc/passwd
+  158  grep  'bash$'   /etc/passwd
+  159  grep  'bash$'   /etc/passwd | wc -l  
+  160  grep  'nologin$'   /etc/passwd | wc -l  
+  161  grep  'nologin$'   /etc/passwd 
+  162  grep  'bash$'   /etc/passwd 
+  163  grep  -c  'bash$'   /etc/passwd 
+  164  grep  'bash$'   /etc/passwd  | wc -l  
+  165  grep  -v  'bash$'   /etc/passwd 
+  166  grep  'ftp'   /etc/passwd 
+  167  grep  '^ftp'   /etc/passwd 
+  168  grep  'bash$'   /etc/passwd 
+  169  grep  'shutdown$'   /etc/passwd 
+  170  grep  'shutdown'   /etc/passwd 
+  171  grep  'shutdown$'   /etc/passwd 
+  172  cat  /etc/default/useradd 
+  173  grep   skel  /etc/default/useradd 
+  174  grep -i    skel  /etc/default/useradd 
+  175  grep -i    skel  /etc/default
+  176  grep -i    skel  /etc/default/*
+  177  grep -i  -R     skel  /etc/default
+  178  grep -i  -n  -R     skel  /etc/default
+  179  grep -i  -n  -R     skel  /etc 
+  180  grep -i  -n  -R     skel  /etc/default  
+  181  grep student  /var/log/secure
+  182  useradd rajat
+  183  grep rajat     /var/log/secure
+  184  grep rajat     /var/log/*
+  185  grep -R   rajat     /var/log
+  186  df  -h 
+  187  df  -h  | awk '{print $1}'
+  188  df  -h  | awk '{print $1,$7}'
+  189  df  -h  | awk '{print $1,$6}'
+  190  df  -h  | awk '{print $1,$6}'  | column -t  
+  191  df  -h  | awk '{print $1,$6}'  | column -t    |  grep tmpfs
+  192  df  -h  | awk '{print $1,$6}'  | column -t    |  grep  -v  tmpfs
+  193  history 
+===============================================================================
