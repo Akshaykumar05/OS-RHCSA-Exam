@@ -1,0 +1,200 @@
+[root@localhost ~]# history 
+    1  cat  /etc/passwd
+    2  wc -l   /etc/passwd
+    3  wc -w   /etc/passwd
+    4  wc -c   /etc/passwd
+    5  cat /etc/passwd | wc -l 
+    6  lsblk 
+    7  lsblk | wc -l  
+    8  history 
+
+=====================================
+
+    9  cat /etc/passwd
+   10  useradd  user1
+   11  useradd  user2
+   12  useradd  user3
+   13  useradd  user4
+   14  useradd  user5
+   15  cat  /etc/passwd
+   16  head  /etc/passwd
+   17  tail  /etc/passwd
+   18  head  -n 5  /etc/passwd
+   19  head  -n 1  /etc/passwd
+   20  tail -n 1  /etc/passwd
+   21  tail -n 5  /etc/passwd
+   22  head  -n 5 /etc/passwd
+   23  head  -n 15 /etc/passwd
+   24  head  -n 20  /etc/passwd
+   25  head  -n 5  /etc/passwd
+   26  head  -5  /etc/passwd
+   27  tail -n 5  /etc/passwd
+   28  tail -5  /etc/passwd
+   29  head -n 1 /etc/passwd
+   30  tail  -n 1 /etc/passwd
+   31  head -n 1  /etc/passwd  ; tail -n 1  /etc/passwd
+   32  head -n 5  /etc/passwd
+   33  head -n 5  /etc/passwd > /tmp/report 
+   34  cat  /tmp/report 
+   35  head -n 5  /etc/passwd | tee /tmp/report-1
+   36  head -n 5  /etc/passwd
+   37  head -n 1  /etc/passwd  ; tail -n 1  /etc/passwd
+   38  head -n 1  /etc/passwd  >  /report ; tail -n 1  /etc/passwd >> /report 
+   39  cat  /report 
+   40  head /etc/passwd
+   41  head /etc/passwd | wc -l 
+   42  head -n 5   /etc/passwd | wc -l 
+   43  head -n 5   /etc/passwd 
+   44  head -n 5   /etc/passwd  | cat -n 
+   45  cat -n  /etc/passwd |  head -n 5 
+   46  cat -n  /etc/passwd |  tail -n 5 
+   47  cat -n  /etc/passwd | tail -n 5 
+   48  tail -n 5  /etc/passwd | cat -n 
+   49  tail -n 5  /etc/passwd 
+   50  head -n 5  /etc/passwd ; head -n 5  /etc/group
+   51  lsblk 
+   52  lsblk  |  head -n  2
+   53  lsblk  |  tail  -n  2
+   54  lsblk  |  head -n  2 ;  lsblk  |  tail  -n  2
+   55  lsblk 
+   56  lsblk | cat -n 
+   57  lsblk | cat -n  | head -n 2 
+   58  lscpu | cat -n 
+   59  lscpu | cat -n  | head  -n  5
+   60  lscpu | cat -n  | head  -n  5  >  /tmp/cpu-info 
+   61  cat /tmp/cpu-info 
+   62  cat -n  /etc/passwd 
+   63  cat -n  /etc/passwd | head -n 25 | tail -n 5 
+   64  cat   /etc/passwd | head -n 25 | tail -n 5 
+   65  head -n 25 /etc/passwd | tail -n 5 
+   66  head -n 25 /etc/passwd | tail -n 5  | cat -n 
+   67  cat -n  /etc/passwd | head -n 25 | tail -n 5 
+   68  lscpu 
+   69  lscpu  | cat -n 
+   70  lscpu  | cat -n  | head  -n  9 
+   71  lscpu  | cat -n  | head  -n  9  | tail -n 1 
+   72  lscpu  | head  -n  9  | tail -n 1 
+   73  lscpu | sed -n '9p'
+   74  cat -n  /etc/passwd  | sed -n '21,25p'
+   75  cat -n  /etc/passwd  | sed -n '23p;25p'
+   76  cat -n  /etc/passwd  | sed -n '21,25p;31p;40,45p'
+   77  cat -n  /etc/crontab 
+   78  head  -n 3    /etc/crontab 
+   79  head -n 1  /etc/shadow
+   80  df -h 
+   81  df -h  | cat -n 
+   82  df -h  | cat -n  | head -n  6
+   83  df -h  | cat -n  | head -n  6 | tail -n 2
+   84  df -h  | head -n  6 | tail -n 2
+   85  df -h  | head -n  6 | tail -n 2 | cat -n 
+   86  df -h  | head -n  6 | tail -n 2 | cat -n  >  /tmp/storgae-info 
+   87  cat /tmp/storgae-info 
+   88  df -h  | head -n  6 | tail -n 2 
+   89  df  -h | head -n 1
+   90  df  -h | head -n 1  >  /tmp/storgae-info 
+   91  cat /tmp/storgae-info 
+   92  df -h  | head -n  6 | tail -n 2 
+   93  df -h  | head -n  6 | tail -n 2  >>  /tmp/storgae-info 
+   94  cat  /tmp/storgae-info 
+   95  df -h | cat -n 
+   96  df -h | cat -n  | sed  -n  '1p;5,6p'
+   97  df -h  | sed  -n  '1p;5,6p'
+   98  sed  '1p'  /etc/passwd 
+   99  sed  -n  '1p'  /etc/passwd 
+  100  sed  -n  '5p'  /etc/passwd 
+  101  sed  -n  '1,5p'  /etc/passwd 
+  102  sed  -n  '1p;5p'  /etc/passwd 
+  103  cat -n  /etc/passwd  | sed -n  '1p'
+  104  cat -n  /etc/passwd  | sed -n  '5p'
+  105  cat -n  /etc/passwd  | sed -n  '1,5p'
+  106  cat -n  /etc/passwd  | sed -n  '1p;5p'
+  107  cat -n  /etc/passwd  | sed -n  '1p'
+  108  cat -n  /etc/passwd  | sed -n  '$p'
+  109  cat -n  /etc/passwd  | sed -n  '1p;$p'
+  110  heda  -n 1  /etc/passwd  ; tail -n 1  /etc/passwd 
+  111  head  -n 1  /etc/passwd  ; tail -n 1  /etc/passwd 
+  112  cat -n  /etc/passwd  | sed -n  '1p;$p'
+  113  cat -n  /etc/passwd  | sed -n  '21,25p'
+  114  cat -n  /etc/passwd  | sed -n  '21p;25p'
+  115  cat -n  /etc/passwd  | sed -n  '1p;5,10p;21p;36,$p'
+  116  cat -n  /etc/crontab 
+  117  cat -n  /etc/crontab  |  sed  -n  '2p;9p;14p'
+  118  lsblk 
+  119  lsblk  | cat -n 
+  120  lsblk  | cat -n  | head -n 5
+  121  lsblk  | cat -n  | head -n 5 | tail -n 3 
+  122  lsblk  | cat -n  | sed -n  '1p;3,5p'
+  123  lsblk   | sed -n  '1p;3,5p'
+  124  lsblk   | sed -n  '1p;3,5p'  > /report  
+  125  cat /report 
+  126  df -h 
+  127  df -h | cat -n 
+  128  df -h | cat -n  | head -n 6
+  129  df -h | cat -n  | head -n 6 | tail -n 2
+  130  df -h   | head -n 6 | tail -n 2
+  131  df -h   | sed  -n  '1p;5,6p'
+  132  ifconfig 
+  133  ifconfig  | cat -n 
+  134  ifconfig  | cat -n | sed -n '2p;11p'
+  135  ifconfig  | sed -n '2p;11p'
+  136  ifconfig | grep inet
+  137  ifconfig | grep -w  inet
+  138  ifconfig  | sed -n '2p;11p'
+  139  ifconfig 
+  140  ifconfig | grep  netmask
+  141  ifconfig | cat -n  | grep  netmask
+  142  ifconfig | sed -n  '2p;11p'
+  143  useradd soniya
+  144  cat  /etc/passwd
+  145  grep soniya   /etc/passwd
+  146  cat  /etc/passwd  |  grep soniya  
+  147  cat -n /etc/passwd
+  148  cat -n /etc/passwd | grep gdm 
+  149  cat -n /etc/passwd | sed  -n  '21,30p'
+  150  cat -n /etc/passwd | sed  -n  '21,30p' |  grep troubleshoot
+  151  grep  troubleshoot   /etc/passwd 
+  152  lsblk 
+  153  lsblk  | grep boot
+  154  lsblk  | sed  -n  '2,6p' |  grep boot
+  155  lsblk  | head  -n 6 | tail-n 3  |  grep boot
+  156  lsblk  | head  -n 6 | tail -n 3  |  grep boot
+  157  lsblk  | head  -n 6 | tail -n 4  |  grep boot
+  158  find  /  -name  useradd
+  159  find  /  -name  useradd | cat -n 
+  160  history 
+  161  df  -h 
+  162  df  -h  | awk '{print $1}'
+  163  df  -h  | awk '{print $1,$4}'
+  164  df -h 
+  165  df -h | awk  '{print $1,$3,$6}'
+  166  df -h | awk  '{print $1,$6}'
+  167  df -h | awk  '{print $3,$4,$6}'
+  168  df -h | awk  '{print $1,$6}'
+  169  df -h | awk  '{print $1,$6}' | column -t 
+  170  df -h | awk  '{print $1,$3,$6}'  
+  171  df -h | awk  '{print $1,$3,$6}'   | column -t 
+  172  lsblk 
+  173  lsblk  | awk  '{print $1}'
+  174  lsblk  | awk  '{print $1,$7}'
+  175  lsblk  | awk  '{print $1,$7}' | column -t
+  176  lsblk  | awk  '{print $1,$7}' | column -t   >  /tmp/storage
+  177  cat /tmp/storage 
+  178  ls  /
+
+  177  cat /tmp/storage 
+  178  ls  /
+  179  ls  /var/log 
+  180  useradd deepak
+  181  date  
+  182  clear
+  183  ls /home 
+  184  cat /var/log/secure
+  185  userdel -rf  deepak 
+  186  cat /var/log/secure
+  187  tail  /var/log/secure
+  188  tail -f    /var/log/secure
+  189  tail -f    /var/log/messages 
+  190  tail -f   /var/log/secure   /var/log/messages 
+  192  tail -f  /var/log/cron 
+
+=======================================
