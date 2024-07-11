@@ -1,0 +1,123 @@
+============================================
+           Day-7 Session
+============================================
+1- Redhat Linux installation
+2- How we can login in machine with root or normal user account ?
+3- Difference between local to local login and Remote login concept ?
+4- What is GUI mode and CLI mode ?
+5- What is terminal ? where we can give input of any command to machine. ?
+6- what is the difference between # and $ symbol ?
+7- What is the parent directory of linux operating system ?  ==>  /
+8- What is the meaning of default data and custom data in linux ? ==> # ls  /
+9- What is the meaning of user's home directory or private place ?
+10-  What is the meaning of public place ?
+11- 
+
+difference  between 
+
+/        ==> parent directory 
+/root    ==> root's home directory
+root     ==> it is super user name    
+/home    ==> default home directory for all normal users but we can change if we want.
+/home/sachin ==> home directory of sachin or normal user
+sachin       ==> It is a user name or normal user name
+
+
+
+12- what is the use of ls command  ?
+13- what is the use of cd command  ?
+14- what is the use of touch command  ? OR Time Stamps - example [HOLD] ?
+15- what is the use of mkdir command ?
+16- what is the use of tree command ?
+17- what is the use of which command ?
+18- what is the use of file command ?
+19- what is the work of  /bin  and /sbin directory ?  ==> Details ==> RPM management ==> Chapters
+
+============================================
+Login ==> xyz command ==> repective  ==> rpm available
+      ==> abc command ==> command not found ==> repective rpm it not available in my machine ==> we can install it 
+============================================
+Task-1
+
+How we can read the content of any file.
+            OR
+  Examples of cat command and Examples of tac command 
+
+1- System defined files
+2- Custom defined files
+
+Syntax:-
+
+# cat  <options>    <filename or location of the file>  
+
+
+tac  ==> to read the content of any file in reverse mode
+
+============================================
+
+
+Task-2   what is the use of echo command ?
+
+echo ==> it is use to print any mesg on the screen.
+
+
+
+
+Task-3   what is the of  wc [ word count ] command ?
+
+it is use to count number of line, number of characters and  number of words of any file.
+
+
+# wc  <options>   <filename or location of the file>
+
+
+
+Task-4
+
+what is the use of  ; and  | symbol in linux ?
+
+
+; [Semicolon ]    ==> use to run more then one command in a sequencing order.
+
+| [pipe symbol]   ==> Command joining Symbol OR input/output symbol  ==> to get customised output with the help of multiple command 
+
+>      ==> it is use to save outout of any command into any file on any place
+
+>>     ==> it is use to append the output of any command into any existing file. 
+
+<    ==> take input
+===================================================
+
+# command-1  | command-2    ==> Final output      ==> Single Pipe Symbol
+  
+# command-1  | command-2   | Command-3   ==> Final Output   ==> multiple pipe symbol
+
+===================================================
+Task-5  what is the use of  tee and tee -a command ?
+
+
+    >     or  tee
+    >>    or  tee -a 
+
+but we always use tee command with pipe symbol.
+
+tee  ==> it is also save and append output of any command into any file as well 
+         as we can print same output on the screen.
+====================================================
+
+task-6  How we can use these all symbols in single comamnd as per needs.
+
+task-7 How we can manage the reports of any xyz command ?
+
+=====================================================
+
+
+
+
+
+
+
+
+
+
+===========================================
